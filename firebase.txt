@@ -1,0 +1,39 @@
+
+FIREBASE DOCUMENTATION
+-----------------------
+
+firebase is like a database used to store the data receive the data update the data and delete the data.
+
+1.HOW TO CREATE DATABADE IN FIREBASE
+
+ -> Google->enter firebase.com ->go to Get started ->sign in with the google account
+    ->new project ->add project-> enter the project name->continue ->after that in left side there is an database
+    ->click on that->set database in default account firebase ->create database (click below the real time database)
+    -> start in testmode->enable
+
+
+2.after creating database, copy the link in firebase,paste into the service you created in angualr project,
+ after that by using that link we can post the data,get the data ,update the data and delete the data.
+ and also write the code for post(),get(),update() and delete() in service.
+
+3.after that write a table in .html file to get the data in table format, and then take one variable like ('u' variable used in .html) put 
+  it in the for loop to iterate array and also we mention in form tag like (ngSubmit) by using that we can post data,copy the method written in
+ for (ngSubmit) and paste in .ts file write code for that method,subscribe that data then only it will work,before that we mension the service 
+ in constructor which service we are using.
+
+4.same thing to get method but get method should be called by constuctor in the .ts file 
+
+5.for the update, take one modal in bootstrap copy code paste in .html file  after that in modal body again write form format 
+  for update, if you need again the data whatever we entered in previous form to the model form,so take again one variable in .ts file, 
+  assign  value for the variable by using which variable used in the for loop ,and then mention in if statement, to check codition after
+  that mention [(ngModel)] for each input variable.
+  
+
+6. in the model again two buttons shold be there are update and delete,if you click on update button data is updated in database or if 
+   you click on close model is closed in that data is remain same.
+
+7.if you click delete button in table it goes to another model there is a message leke this "do you want to delete this one?" and
+   below the text two buttons is there like delete and cancel,if you click on that delete button data is deleted in the database or 
+   if you click on the cancel the model is closed without deleting the data.
+
+ 
